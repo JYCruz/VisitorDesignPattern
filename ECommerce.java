@@ -2,7 +2,7 @@ public class ECommerce {
     public static void main(String[] args){
         System.out.println("E-Commerce: Shipping Cost Calculations\n");
 
-                    //Parameter means name, furniture type, and its size in inches 
+                    //name,type,inch
         Furniture diningChair = new Furniture("Dining Chair","Chair", 36);
         Furniture kitchenChair = new Furniture("Kitchen Chair","Chair", 19);
         Furniture diningTable = new Furniture("Dining Table","Table", 72);
@@ -25,8 +25,7 @@ public class ECommerce {
         System.out.println("The " + loversSofa.getName()  + " will be shipped and will travel 3 kilometers." +
                             "\n\tIts shipping fee will cost " + getShippingCost(loversSofa, 3) +"PHP\n");
 
-        System.out.println("\n------[ Visitor Pattern ]------\n" +
-                            "by Marasigan, Vem Aiensi : 3BSCS-1");
+        System.out.println("\n------[ Visitor Pattern ]------\n");
     }
 
     static double getShippingCost(Furniture furniture, double distance){
