@@ -3,8 +3,7 @@ import java.util.Map;
 
 public class ChairCalc implements ShipmentCalc{
     private static Map<String, Double> sizeChart = new HashMap<>();
-    static {//the value parameter (double) represents a fixed shipping cost
-            //regardless of distance
+    static {
         sizeChart.put("small", 30.0);
         sizeChart.put("medium", 40.0);
         sizeChart.put("large", 50.0);
@@ -12,7 +11,6 @@ public class ChairCalc implements ShipmentCalc{
 
     @Override
     public double compute(double size, double distance) {
-        // Picking the size category
         String ctg = "";
 
         if(size <=18.0){
